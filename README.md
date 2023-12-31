@@ -2,7 +2,7 @@
 
 ## Task 1
  
-Description of code 
+Description of code\n 
 The file task1.c includes the function routine1(), which adds the two matrices A an B and stores the result in C. The function returns the calculation time in ns. In the main function routine1() function is executed 10 times with different matrix sizes each time. The calculation time is then printed. 
 
 The task1.pbs file is for running the code on the cluster. In this file it the code is compiled and ran four times, using different compilation each time. 
