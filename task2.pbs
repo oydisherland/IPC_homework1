@@ -1,0 +1,31 @@
+#!/bin/bash
+# Job task2
+#PBS -N task2
+# Output files
+#PBS -o ./task2.o
+#PBS -e ./task2.e
+# Queue name
+#PBS -q short_cpuQ
+# Set the maximum wall time
+#PBS -l walltime=0:40:00
+# Number of nodes, cpus, mpi processors and amount of memory
+#PBS -l select=1:ncpus=4:mpiprocs=1:mem=1mb
+
+# Modules for C
+module load gcc91
+
+# To check the architecture
+lscpu
+
+# Select the working directory 
+cd /home/oeydis.herland/homework1/task2.1
+
+# compilation and running of the code
+gcc -o out task2.c && ./out
+
+gcc -O -o out task2.c && ./out
+
+gcc -O2 -o out task2.c && ./out
+
+gcc -Ofast -o out task2.c && ./out
+
