@@ -74,16 +74,13 @@ int main(){
     float* B = (float*)malloc(pow(2,22)*sizeof(float));
     float* C = (float*)malloc(pow(2,22)*sizeof(float));
 
-    unsigned long test = routine1(4,A,B,C);
 //GENERATE RESULTS
-/*
+
     for ( i = 0; i < 10; i++){
         timesRoutine1[i] = routine1(arraySizes[i], A, B, C);
         printf("%lu ns\n", timesRoutine1[i]);
     }
-*/
-    timesRoutine1[0] = routine1(pow(2,22), A, B, C);
-    printf("%lu ns\n", timesRoutine1[0]);  
+
     free(A);
     free(B);
     free(C);

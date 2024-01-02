@@ -3,9 +3,6 @@
 #include <time.h>
 #include <math.h>
 
-//   export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
-//   export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
-
 
 void checkIfCorrect(int** matrix, int** returnmatrix, int b, int p){
     int i, j;
